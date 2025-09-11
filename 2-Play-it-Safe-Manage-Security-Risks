@@ -1,0 +1,61 @@
+# Module 1: Introduction to Security Risks  
+
+🔹 What are Security Risks?  
+Security risks are potential events or conditions that can negatively affect assets (data, systems, people).  
+They arise from **threats + vulnerabilities**.  
+
+- Threat = Any potential danger (hackers, malware, insider threats).  
+- Vulnerability = Weakness that can be exploited (unpatched software, weak passwords).  
+- Risk = Likelihood × Impact of a threat exploiting a vulnerability.  
+
+---
+
+ 🔹 Common Types of Security Risks  
+1. Operational risks – Poor processes, system failures.  
+2. Legal/Compliance risks – Violations of laws/regulations.  
+3. Strategic risks – Poor planning or decision-making.  
+4. Reputational risks – Negative publicity, customer distrust.  
+
+---
+
+🔹 Example  
+- Asset: Customer database  
+- Threat: Ransomware  
+- Vulnerability: Unpatched OS  
+- Risk: Data loss, financial damage, legal penalties  
+
+
+# Module 2: Security Controls  
+
+ 🔹 What are Security Controls?  
+Controls are measures taken to reduce risk by preventing, detecting, or responding to threats.  
+
+---
+
+ 🔹 Types of Security Controls  
+1. Preventive Controls  
+   - Stop incidents before they happen.  
+   - Example: Firewalls, strong authentication, encryption.  
+
+2. Detective Controls  
+   - Identify and alert about ongoing incidents.  
+   - Example: IDS (Intrusion Detection Systems), SIEM alerts, audit logs.  
+
+3. Corrective Controls  
+   - Minimize damage and recover systems.  
+   - Example: Backups, patches, incident response plans.  
+
+---
+
+🔹 Control Categories  
+- Administrative → Policies, training, procedures  
+- Technical → Firewalls, IDS/IPS, antivirus  
+- Physical → Locks, CCTV, secure facilities  
+
+---
+
+🔹 Example  
+- Risk: Unauthorized access to company data  
+- Preventive: Multi-factor authentication  
+- Detective: Log monitoring with SIEM  
+- Corrective: Disable compromised account, restore data from backup  
