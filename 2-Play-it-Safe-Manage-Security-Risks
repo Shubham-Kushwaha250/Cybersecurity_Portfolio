@@ -9,15 +9,13 @@ They arise from **threats + vulnerabilities**.
 - Risk = Likelihood × Impact of a threat exploiting a vulnerability.  
 
 ---
-
- 🔹 Common Types of Security Risks  
+🔹 Common Types of Security Risks  
 1. Operational risks – Poor processes, system failures.  
 2. Legal/Compliance risks – Violations of laws/regulations.  
 3. Strategic risks – Poor planning or decision-making.  
 4. Reputational risks – Negative publicity, customer distrust.  
 
 ---
-
 🔹 Example  
 - Asset: Customer database  
 - Threat: Ransomware  
@@ -26,13 +24,11 @@ They arise from **threats + vulnerabilities**.
 
 
 # Module 2: Security Controls  
-
- 🔹 What are Security Controls?  
+🔹 What are Security Controls?  
 Controls are measures taken to reduce risk by preventing, detecting, or responding to threats.  
 
 ---
-
- 🔹 Types of Security Controls  
+🔹 Types of Security Controls  
 1. Preventive Controls  
    - Stop incidents before they happen.  
    - Example: Firewalls, strong authentication, encryption.  
@@ -46,16 +42,80 @@ Controls are measures taken to reduce risk by preventing, detecting, or respondi
    - Example: Backups, patches, incident response plans.  
 
 ---
-
 🔹 Control Categories  
 - Administrative → Policies, training, procedures  
 - Technical → Firewalls, IDS/IPS, antivirus  
 - Physical → Locks, CCTV, secure facilities  
 
 ---
-
 🔹 Example  
 - Risk: Unauthorized access to company data  
 - Preventive: Multi-factor authentication  
 - Detective: Log monitoring with SIEM  
 - Corrective: Disable compromised account, restore data from backup  
+
+# Module 3: Audit Scope and Goals
+
+🔹 What is a Security Audit?
+A security audit is a systematic evaluation of an organization's information system to ensure security measures and controls are effective.
+
+🔹 Audit Scope
+Defines **what is included/excluded** in the audit.  
+- Systems: Web servers, databases, employee endpoints  
+- Networks: Internal LAN, wireless networks  
+- Processes: Access control, password policies, backups  
+- Physical security: CCTV, locks, restricted areas  
+
+🔹 Audit Goals
+1. Identify security gaps (technical + process)  
+2. Check compliance with regulations (PCI-DSS, GDPR, SOC 2)  
+3. Assess incident response readiness  
+4. Recommend improvements  
+
+🔹 Example (Botium Toys case study)
+- Scope: Payment systems, employee devices, server infrastructure  
+- Goal: Ensure PCI DSS compliance, protect customer data, evaluate incident response
+
+# Module 4: Controls and Compliance Checklist
+
+🔹 Why Compliance Matters?
+Compliance frameworks (PCI DSS, GDPR, SOC2) ensure that organizations protect customer data, meet legal requirements, and reduce risks.
+
+---
+
+🔹 Security Controls Checklist
+| Control                        | Status | Notes                        |
+|--------------------------------|--------|------------------------------|
+| Least Privilege                | ❌      | Needs implementation         |
+| Password Policy                 | ❌      | Must enforce strong passwords|
+| Firewall                        | ✅      | Configured properly          |
+| Antivirus/EDR                   | ✅      | Installed on endpoints       |
+| Data Encryption                 | ❌      | Missing for sensitive data   |
+| Backups                         | ✅      | Regular backups in place     |
+| IDS/IPS                         | ❌      | Recommended                  |
+| Physical Security (locks, CCTV) | ✅/❌   | Locks present, CCTV missing  |
+
+---
+
+🔹 Compliance Standards
+ PCI DSS
+- [ ] Limit access to cardholder data  
+- [ ] Encrypt sensitive data during storage/transmission  
+- [ ] Maintain password policies  
+
+ GDPR
+- [ ] Data breach notification (72 hours)  
+- [ ] Privacy policies documented  
+- [ ] Data subject rights (access, deletion)  
+
+ SOC 2
+- [ ] Access control policies  
+- [ ] Data confidentiality and integrity  
+- [ ] System availability controls  
+
+---
+ ✅ Audit Recommendation (Summary)
+- Implement missing preventive/detective controls  
+- Encrypt sensitive customer and financial data  
+- Add CCTV and monitoring systems  
+- Develop strong password management policy
