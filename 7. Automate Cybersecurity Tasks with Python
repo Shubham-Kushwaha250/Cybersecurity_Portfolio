@@ -1,0 +1,105 @@
+🔹 Course Overview
+This course introduces Python programming for automating common cybersecurity tasks.
+Automation helps security teams save time, reduce errors, and respond faster to incidents.
+This course is essential for:
+SOC Analyst
+Cybersecurity Analyst
+Security Automation roles
+
+✅ Module 1: Python Fundamentals for Cybersecurity
+🔹 Why Python in Cybersecurity?
+Python is widely used because:
+Easy to learn
+Powerful libraries
+Used in security tools and scripts
+
+🔹 Core Python Concepts
+Variables
+Data types (int, string, list, dictionary)
+Conditional statements (if, else)
+Loops (for, while)
+Functions
+
+🔹 Example
+failed_attempts = 6
+if failed_attempts > 5:
+    print("Potential brute-force attack detected")
+
+✅ Module 2: Working with Files and Logs
+🔹 Reading and Writing Files
+Python can be used to analyze log files automatically.
+🔹 Example: Reading Log Files
+with open("auth.log", "r") as file:
+    for line in file:
+        if "Failed password" in line:
+            print(line)
+
+🔹 Why File Handling is Important?
+Log analysis
+Evidence collection
+Incident investigation
+
+✅ Module 3: Data Processing and Filtering
+🔹 Filtering Security Events
+Python helps filter:
+Failed logins
+Suspicious IP addresses
+Repeated events
+
+🔹 Example: Detect Multiple Failed Logins
+failed_count = {}
+
+for line in log_data:
+    user = extract_user(line)
+    failed_count[user] = failed_count.get(user, 0) + 1
+
+🔹 Benefits
+Faster detection
+Reduced manual effort
+
+✅ Module 4: Using Regular Expressions (Regex)
+🔹 What is Regex?
+Regex is used to match patterns in text.
+
+🔹 Why Regex in Security?
+Extract IP addresses
+Find usernames
+Detect suspicious patterns
+
+🔹 Example
+import re
+ip_pattern = r"\b\d{1,3}(\.\d{1,3}){3}\b"
+ips = re.findall(ip_pattern, log_text)
+
+✅ Module 5: Automation Use Cases
+🔹 Common Security Automation Tasks
+Log parsing
+Password strength checking
+Alert generation
+IOC (Indicator of Compromise) detection
+
+🔹 Example: Password Strength Checker
+def check_password_strength(password):
+    if len(password) < 8:
+        return "Weak password"
+    return "Strong password"
+
+✅ Module 6: Writing Secure Code
+🔹 Secure Coding Principles
+Input validation
+Error handling
+Avoid hard-coded secrets
+
+🔹 Example
+try:
+    process_log(file)
+except Exception as e:
+    print("Error occurred:", e)
+
+✅ Course 8 – Portfolio Summary
+Through this course, I learned:
+Python basics for cybersecurity
+File and log handling
+Regex for security analysis
+Automating detection tasks
+Writing secure and maintainable scripts
