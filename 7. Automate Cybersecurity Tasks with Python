@@ -96,7 +96,7 @@ try:
 except Exception as e:
     print("Error occurred:", e)
 
-✅ Course 8 – Portfolio Summary
+✅ Course 7 – Portfolio Summary
 Through this course, I learned:
 Python basics for cybersecurity
 File and log handling
