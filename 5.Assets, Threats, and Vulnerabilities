@@ -1,0 +1,150 @@
+🔹 Course Overview
+This course focuses on understanding what needs to be protected (assets), what can cause harm (threats), and where weaknesses exist (vulnerabilities).
+It also introduces risk management, threat modeling, and basic vulnerability management concepts used in real organizations.
+
+This course is fundamental for:
+SOC Analyst
+Cybersecurity Analyst
+Risk & Compliance roles
+
+✅ Module 1: Organizational Assets
+🔹 What are Assets?
+Assets are anything valuable to an organization that must be protected.
+
+🔹 Types of Assets
+1. Physical Assets
+Servers
+Laptops
+Data centers
+
+2. Digital Assets
+Databases
+Source code
+Customer information
+
+3. Intangible Assets
+Brand reputation
+Intellectual property
+
+4. People
+Employees
+Customers
+Contractors
+
+🔹 Asset Classification
+Assets are classified based on:
+Sensitivity
+Value
+Impact if compromised
+
+Example:
+Public
+Internal
+Confidential
+Restricted
+
+✅ Module 2: Threats
+🔹 What is a Threat?
+A threat is any potential event or actor that can cause harm to an asset.
+
+🔹 Types of Threat Actors
+Threat Actor	                        Description
+Cybercriminals	                      Financially motivated
+Insiders	                            Employees or contractors
+Hacktivists	                          Ideology-driven
+Nation-state actors	                  Advanced persistent threats
+
+🔹 Common Threats
+Malware
+Phishing
+DDoS attacks
+Insider threats
+
+🔹 Threat Intelligence
+Threat intelligence helps organizations:
+Understand attacker behavior
+Predict attacks
+Improve defenses
+
+✅ Module 3: Vulnerabilities
+🔹 What is a Vulnerability?
+A vulnerability is a weakness that can be exploited by a threat.
+
+🔹 Common Vulnerabilities
+Unpatched software
+Weak passwords
+Misconfigured systems
+Open ports
+
+🔹 Vulnerability Management Lifecycle
+Identify vulnerabilities
+Assess severity
+Prioritize risks
+Remediate
+Verify fixes
+
+🔹 Example
+Vulnerability: Outdated web server
+Threat: Remote code execution
+Risk: Data breach
+
+✅ Module 4: Risk Management
+🔹 What is Risk?
+Risk is the potential impact of a threat exploiting a vulnerability.
+📌 Risk = Threat × Vulnerability × Impact
+
+🔹 Risk Treatment Options
+Method	                       Description
+Mitigate	                     Reduce risk
+Accept	                       Acknowledge risk
+Transfer	                     Insurance
+Avoid	                         Eliminate activity
+
+🔹 Risk Assessment Steps
+Identify assets
+Identify threats
+Identify vulnerabilities
+Evaluate likelihood & impact
+Apply controls
+
+✅ Module 5: Threat Modeling
+🔹 What is Threat Modeling?
+Threat modeling is a structured approach to identifying security risks in systems.
+
+🔹 STRIDE Model
+Category	Meaning
+S	Spoofing
+T	Tampering
+R	Repudiation
+I	Information disclosure
+D	Denial of service
+E	Elevation of privilege
+
+🔹 Example
+Web application:
+Threat: SQL injection
+Vulnerability: Unsanitized inputs
+Control: Input validation
+
+✅ Module 6: Defense in Depth
+🔹 What is Defense in Depth?
+Defense in Depth uses multiple layers of security controls to protect assets.
+
+🔹 Security Layers
+Physical security
+Network security
+Application security
+Endpoint security
+Data security
+
+🔹 Example
+Even if firewall fails → IDS, MFA, monitoring still protect systems.
+
+✅ Course 6 – Portfolio Summary
+Through this course, I learned:
+Asset identification and classification
+Threat actors and attack methods
+Vulnerability management
+Risk assessment and treatment
+Threat modeling (STRIDE)
+Defense-in-depth strategy
