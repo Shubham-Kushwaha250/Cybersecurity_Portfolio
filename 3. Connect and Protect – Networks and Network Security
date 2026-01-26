@@ -1,0 +1,122 @@
+🔹 Course Overview
+This course focuses on computer networks, network attacks, network security controls, and monitoring & incident response.
+It builds a strong foundation for SOC Analyst and Cybersecurity Analyst roles.
+
+✅ Module 1: Network Architecture & Communication
+🔹 What is a Computer Network?
+  A computer network is a collection of interconnected devices (computers, servers, routers) that communicate to share data and resources.
+
+🔹 Why Networks Matter in Security
+   Most cyber attacks happen over networks
+   Understanding networks helps identify attack paths
+   Helps in placing correct security controls
+
+🔹 OSI Model (7 Layers)
+Layer	Name	        Function	                          Security Relevance
+7	Application      	User interaction (HTTP, FTP)	      Phishing, malware
+6	Presentation	    Encryption & formatting	            SSL/TLS
+5	Session	          Session control                   	Session hijacking
+4	Transport	        TCP/UDP	                            Port scanning
+3	Network	          IP addressing                     	IP spoofing
+2	Data Link        	MAC addressing	                    ARP poisoning
+1	Physical	        Cables & signals	                  Physical attacks
+
+🔹 Security Benefit
+OSI model helps analysts quickly identify where an attack is occurring.
+
+🔹 Common Network Protocols
+HTTP/HTTPS – Web communication
+DNS – Domain name resolution
+FTP/SFTP – File transfer
+SMTP – Email transfer
+TCP/UDP – Transport protocols
+
+🔹 Example
+HTTP → vulnerable
+HTTPS → encrypted & secure
+
+✅ Module 2: Network Attacks
+🔹 What is a Network Attack?
+   An attempt to gain unauthorized access, disrupt services, or steal data through network communication.
+
+🔹 Common Network Attacks
+1️⃣ Man-in-the-Middle (MITM)
+Attacker intercepts communication
+Common in public Wi-Fi
+🔹 Impact
+Credential theft
+Data manipulation
+🔹 Mitigation
+HTTPS
+VPN
+
+2️⃣ DNS Spoofing
+Fake DNS responses redirect users
+🔹 Impact
+Phishing
+Malware delivery
+
+3️⃣ ARP Poisoning
+Attacker associates their MAC with victim IP
+🔹 Layer Affected
+OSI Layer 2 (Data Link)
+
+4️⃣ DoS / DDoS
+Flooding network with traffic
+🔹 Impact
+Service outage
+Financial loss
+🔹 Example Risk Scenario
+Asset: Web server
+Threat: DDoS
+Vulnerability: No traffic filtering
+Impact: Website downtime
+
+✅ Module 3: Network Security Controls
+🔹 What are Network Security Controls?
+   Controls designed to protect networks from unauthorized access and attacks.
+
+🔹 Types of Network Controls
+🔸 Firewalls
+    Filter incoming & outgoing traffic
+    Based on rules
+🔸 IDS / IPS
+   IDS → Detects suspicious traffic
+   IPS → Detects + blocks attacks
+🔸 VPN (Virtual Private Network)
+   Encrypts communication
+   Protects remote access
+🔸 Network Segmentation
+   Divides network into zones
+   Limits attack spread
+🔹 Example
+Risk: Unauthorized access
+Control: Firewall + IDS
+Result: Reduced attack surface
+
+✅ Module 4: Network Monitoring & Incident Response
+🔹 What is Network Monitoring?
+Continuous observation of network traffic to detect anomalies and threats.
+🔹 Monitoring Tools
+Wireshark – Packet analysis
+IDS logs – Intrusion detection
+Firewall logs – Traffic filtering
+🔹 Incident Response (Network Focus)
+Steps:
+Detection – Alert triggered
+Analysis – Identify attack type
+Containment – Block attacker IP
+Recovery – Restore services
+
+🔹 Example
+Alert: Suspicious traffic
+Action: Block IP
+Result: Attack stopped
+
+✅ Course 4 – Portfolio Summary
+This course strengthened my understanding of:
+Network architecture & protocols
+Network-based attacks
+Security controls like firewalls, IDS, VPN
+Network monitoring & incident response
+📌 These skills are essential for SOC Analyst Intern and Cybersecurity Intern roles.
