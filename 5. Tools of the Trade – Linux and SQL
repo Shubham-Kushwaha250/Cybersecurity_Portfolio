@@ -1,0 +1,136 @@
+🔹 Course Overview
+
+This course focuses on hands-on technical skills required for entry-level cybersecurity roles.
+It introduces Linux operating systems, command-line tools, and SQL for investigating security incidents and analyzing data.
+
+This course is critical for roles such as:
+Cybersecurity Analyst
+SOC Analyst
+Blue Team Analyst
+
+✅ Module 1: Introduction to Linux
+🔹 What is Linux?
+Linux is an open-source operating system widely used in:
+Servers
+Cloud infrastructure
+Security tools (SIEM, firewalls, IDS)
+Cybersecurity professionals use Linux for:
+Log analysis
+System monitoring
+Security tool execution
+
+🔹 Linux Architecture (High Level)
+Kernel → Core of the OS
+Shell → Interface between user and system
+File System → Organizes data
+
+🔹 Why Linux is Important in Cybersecurity?
+Strong permission model
+Powerful command-line tools
+Widely used in enterprise environments
+
+✅ Module 2: Linux Command Line Basics
+🔹 Navigating the File System
+Command	Purpose
+pwd	Show current directory
+ls	List files
+cd	Change directory
+🔹 File & Directory Management
+Command	Purpose
+touch	Create file
+mkdir	Create directory
+cp	Copy files
+mv	Move/rename files
+rm	Delete files
+🔹 Viewing & Searching Files
+Command	Purpose
+cat	View file
+less	Scroll file
+head/tail	View start/end
+grep	Search text
+🔹 Permissions & Ownership
+chmod → Change permissions
+chown → Change ownership
+
+Permission types:
+Read (r)
+Write (w)
+Execute (x)
+
+🔹 Example
+chmod 600 secure_file.txt
+Allows only the owner to read and write the file.
+
+✅ Module 3: Linux for Security Operations
+🔹 Process & System Monitoring
+Command	Purpose
+ps	View processes
+top	Real-time monitoring
+who	Logged-in users
+netstat / ss	Network connections
+
+🔹 Log Analysis
+Common log files:
+/var/log/auth.log
+/var/log/syslog
+
+Example:
+grep "failed" /var/log/auth.log
+Used to detect failed login attempts.
+
+🔹 Why Logs Matter in Security?
+Logs help in:
+Incident detection
+Forensics
+Compliance audits
+
+✅ Module 4: Introduction to SQL
+🔹 What is SQL?
+SQL (Structured Query Language) is used to:
+Store data
+Retrieve data
+Analyze security events
+Security teams use SQL to query:
+Login records
+Alert databases
+Incident reports
+
+🔹 Basic SQL Commands
+Command	Purpose
+SELECT	Retrieve data
+FROM	Specify table
+WHERE	Filter data
+ORDER BY	Sort results
+LIMIT	Restrict output
+🔹 Example
+SELECT username, login_time
+FROM login_logs
+WHERE status = 'FAILED';
+
+✅ Module 5: SQL for Security Analysis
+🔹 Advanced Queries
+   Filtering suspicious activity
+   Identifying repeated failures
+   Correlating events
+
+🔹 Example Use Case
+Detect brute-force attempts:
+SELECT username, COUNT(*)
+FROM login_logs
+WHERE status = 'FAILED'
+GROUP BY username
+HAVING COUNT(*) > 5;
+
+🔹 Why SQL is Important for Cybersecurity?
+Used in SIEM tools
+Helps in threat detection
+Supports incident investigations
+
+✅ Course 5 – Portfolio Summary
+   Through this course, I learned:
+   Linux command-line operations
+   File permissions and ownership
+   System and log monitoring
+   SQL queries for security investigations
+
+📌 I practiced Linux commands and SQL queries to analyze logs and detect suspicious activity.
